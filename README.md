@@ -5,6 +5,8 @@
 
 Integrates [Google App Indexing](https://developers.google.com/app-indexing) with React Native.
 
+This package is **not** production ready.
+
 
 ## Installation
 
@@ -26,33 +28,47 @@ Then you will need to follow some extra steps.
 Add in the main activity of your manifest (`android/app/src/mainAndroidManifest.xml`) the following `intent-filter`.
 
 ```xml
-<intent-filter>
-    <action android:name="android.intent.action.VIEW" />
-    <category android:name="android.intent.category.DEFAULT" />
-    <category android:name="android.intent.category.BROWSABLE" />
-    <data android:scheme="http" />
-    <data android:scheme="https" />
-    <data android:host="www.YOUR-DOMAIN.com" />
-<intent-filter>
+<activity
+    ...>
+    <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="http" />
+        <data android:scheme="https" />
+        <data android:host="www.YOUR-DOMAIN.com" />
+    <intent-filter>
+</activity>
 ```
 
-Remember that you can obtain more info about how to integrate app indexing [in their docs](https://developers.google.com/app-indexing).
+You can obtain more info about how to add the `intent-filter` and it options in
+[the following link](https://developers.google.com/app-indexing/android/app#add-intent-filters-for-http-urls).
 
 ### iOS
 
 iOS is not yet supported.
 
 
+
 ## Usage
+
+
+### Deep links
 
 ```js
 import AppIndexing from 'react-native-app-indexing'
 ```
 
+### Add App Indexing API
+
+```js
+import AppIndexing from 'react-native-app-indexing'
+```
+
+
 ## License
 
-react-native-lock-ios is available under the MIT license. See the [LICENSE](LICENSE) file
-for more info.
+This project is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
 
 
 [npm-image]: https://img.shields.io/npm/v/react-native-app-indexing.svg?style=flat
