@@ -1,20 +1,22 @@
 {
   "name": "react-native-app-indexing",
-  "version": "0.5",
   "description": "React Native Google App Indexing",
-  "main": "index.js",
-  "scripts": {
-  },
+  "version": "0.5.0",
+  "author": "Jose Ignacio Galarza <igalarzab@gmail.com>",
+  "homepage": "https://github.com/igalarzab/react-native-app-indexing",
   "repository": {
     "type": "git",
-    "url": "github.com/igalarzab/react-native-app-indexing.git"
+    "url": "https://github.com/igalarzab/react-native-app-indexing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/igalarzab/react-native-app-indexing/issues"
   },
   "keywords": [
     "react-native",
     "react-component",
-    "ios",
     "android"
   ],
-  "author": "Jose Ignacio Galarza",
-  "license": "MIT"
+  "dependencies": {
+    "url": "^0.11.0"
+  }
 }
