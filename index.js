@@ -1,7 +1,7 @@
 'use strict'
 
 import url from 'url'
-import {Linking, NativeModules} from 'react-native'
+import {Linking, NativeModules, Platform} from 'react-native'
 
 
 export default class AppIndexing {
@@ -10,7 +10,7 @@ export default class AppIndexing {
       if (!urltext) {
         return null;
       }
-      
+
       let parser = url.parse(urltext, true, true)
 
       return {
@@ -25,10 +25,18 @@ export default class AppIndexing {
   }
 
   static startViewAction(title, url, description=null) {
+    if (Platform.OS !== 'android') {
+      return null
+    }
+
     return NativeModules.AppIndexing.startViewAction(title, description, url)
   }
 
   static stopViewAction() {
+    if (Platform.OS !== 'android') {
+      return null
+    }
+
     return NativeModules.AppIndexing.stopViewAction()
   }
 }
