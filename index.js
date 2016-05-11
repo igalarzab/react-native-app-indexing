@@ -29,7 +29,11 @@ export default class AppIndexing {
       return null
     }
 
-    return NativeModules.AppIndexing.startViewAction(title, description, url)
+    if (!title || !url) {
+      throw new Error('title and url are mandatory')
+    }
+
+    NativeModules.AppIndexing.startViewAction(title, url, description)
   }
 
   static stopViewAction() {
@@ -37,6 +41,6 @@ export default class AppIndexing {
       return null
     }
 
-    return NativeModules.AppIndexing.stopViewAction()
+    NativeModules.AppIndexing.stopViewAction()
   }
 }

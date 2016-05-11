@@ -5,10 +5,8 @@ import android.net.Uri;
 import android.util.Log;
 
 import com.facebook.react.bridge.ReactApplicationContext;
-import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing.Builder;
@@ -83,7 +81,7 @@ public class AppIndexing extends ReactContextBaseJavaModule {
 
     private void setAction(String title, String url, String description) {
         this.title = title;
-        this.description = description;
         this.url = Uri.parse(url);
+        this.description = description;
     }
 }
