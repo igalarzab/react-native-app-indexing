@@ -3,7 +3,7 @@
 [![NPM version][npm-image]][npm-url]
 
 
-Integrates [Google App Indexing](https://developers.google.com/app-indexing) with React Native.
+Integrates [Google App Indexing](https://firebase.google.com/docs/app-indexing/) with React Native.
 
 This package is **not** production ready.
 
@@ -42,7 +42,7 @@ Add in the main activity of your manifest (`android/app/src/mainAndroidManifest.
 ```
 
 You can obtain more info about how to add the `intent-filter` and it options in
-[the following link](https://developers.google.com/app-indexing/android/app#add-intent-filters-for-http-urls).
+[the following link](https://firebase.google.com/docs/app-indexing/android/app#add-intent-filters).
 
 ### iOS
 
