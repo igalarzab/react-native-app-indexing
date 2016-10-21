@@ -5,8 +5,6 @@
 
 Integrates [Google App Indexing](https://firebase.google.com/docs/app-indexing/) with React Native.
 
-This package is **not** production ready.
-
 
 ## Installation
 
@@ -46,7 +44,7 @@ You can obtain more info about how to add the `intent-filter` and it options in
 
 ### iOS
 
-iOS is not yet supported.
+iOS is not yet supported, please, feel free to send a pull request :D
 
 
 
