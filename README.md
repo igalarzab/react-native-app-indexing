@@ -4,6 +4,7 @@
 
 
 Integrates [Google App Indexing](https://firebase.google.com/docs/app-indexing/) with React Native.
+Support for react native 0.47
 
 
 ## Installation
