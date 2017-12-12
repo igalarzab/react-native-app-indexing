@@ -1,8 +1,8 @@
 {
   "name": "react-native-app-indexing",
   "description": "React Native Google App Indexing",
-  "version": "0.5.0",
-  "author": "Jose Ignacio Galarza <igalarzab@gmail.com>",
+  "version": "0.6.0",
+  "author": "Jose Galarza <igalarzab@gmail.com>",
   "homepage": "https://github.com/igalarzab/react-native-app-indexing",
   "repository": {
     "type": "git",
